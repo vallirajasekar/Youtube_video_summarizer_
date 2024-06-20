@@ -86,6 +86,7 @@ if youtube_link:
         st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_column_width=True)
     except ValueError:
         st.error("Invalid YouTube URL. Please enter a valid URL.")
+        
 
 if st.button("Get Detailed Notes"):
     transcript_text = extract_transcript_details(youtube_link)
